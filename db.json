@@ -12,5 +12,68 @@
       "password": "123456",
       "id": 2
     }
+  ],
+  "cities": [
+    {
+      "Name": "Agra",
+      "id": "2652"
+    },
+    {
+      "Name": "Ahmedabad",
+      "id": "4c40"
+    },
+    {
+      "Name": "Ajmer",
+      "id": "98ea"
+    },
+    {
+      "Name": "Alappuzha",
+      "id": "dcd0"
+    },
+    {
+      "Name": "Allahabad",
+      "id": "7624"
+    },
+    {
+      "Name": "Amravati",
+      "id": "7ec4"
+    },
+    {
+      "Name": "Amritsar",
+      "id": "ecd8"
+    },
+    {
+      "Name": "Aurangabad",
+      "id": "414a"
+    },
+    {
+      "Name": "Bengaluru",
+      "id": "d065"
+    },
+    {
+      "Name": "Bhopal",
+      "id": "182f"
+    },
+    {
+      "Name": "Bhubaneswar",
+      "id": "cab9"
+    }
+  ],
+  "restaurants" : [
+    {
+      "id":1,
+      "cityId":"2652",
+      "name" : "Royal Dhaba"
+    },
+    {
+      "id":2,
+      "cityId":"2652",
+      "name" : "Biryani Nation"
+    },
+    {
+      "id":1,
+      "cityId":"414a",
+      "name" : "Punjabi Rasoi"
+    }
   ]
 }
