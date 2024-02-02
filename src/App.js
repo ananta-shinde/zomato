@@ -6,6 +6,7 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import { useState } from 'react';
 import RestaurantList from './pages/RestaurantList';
+import Restaurant from './pages/Restaurant';
 
 function App() {
   const [user,setUser] = useState();
@@ -17,6 +18,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/cart' element={<h1>cart</h1>}/>
         <Route path='/restaurents/:cityId' element={<RestaurantList/>}/>
+        <Route path='/restaurent_details/:restId' element={<Restaurant/>}/>
       </Routes>
     </BrowserRouter>
   );

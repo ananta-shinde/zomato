@@ -63,17 +63,37 @@
     {
       "id":1,
       "cityId":"2652",
-      "name" : "Royal Dhaba"
+      "name" : "Royal Dhaba",
+      "image":"https://b.zmtcdn.com/data/pictures/chains/3/20889263/d486d9ab629536dc989cbb192ba7ae9e_featured_v2.jpg?output-format=webp",
+      "ratings":4,
+      "description":"South Indian, Chinese, Punjabi dishes, Rajashtani thali",
+      "dishes" : [
+           1,2
+      ]
     },
     {
       "id":2,
       "cityId":"2652",
-      "name" : "Biryani Nation"
+      "name" : "Biryani Nation",
+      "image":"https://b.zmtcdn.com/data/pictures/chains/3/20889263/d486d9ab629536dc989cbb192ba7ae9e_featured_v2.jpg?output-format=webp"
     },
     {
-      "id":1,
+      "id":3,
       "cityId":"414a",
-      "name" : "Punjabi Rasoi"
+      "name" : "Punjabi Rasoi",
+      "image":"https://b.zmtcdn.com/data/pictures/chains/3/20889263/d486d9ab629536dc989cbb192ba7ae9e_featured_v2.jpg?output-format=webp"
+    }
+  ],
+  "dishes":[
+    {
+      "id":1,
+      "name": "Paneer Masala",
+      "decription":"spicy indian dish"
+    },
+    {
+      "id":2,
+      "name": "Biryani",
+      "decription":"Mughlai indian dish"
     }
   ]
 }
