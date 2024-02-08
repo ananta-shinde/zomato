@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import MenuCard from "../components/MenuCard";
 
 const Restaurant = () => {
     const {restId} = useParams();
@@ -10,22 +11,35 @@ const Restaurant = () => {
         .then(res=>res.json())
         .then(rests=> {
             setRestaurant(rests[0]);
-            for(var i=0;i<rests[0].dishes.length;i++){
-                fetch(`http://localhost:7000/dishes?id=${rests[0].dishes[i]}`)
+                fetch(`http://localhost:7000/menus?_expand=dishes&?restaurantId=${rests[0].id}`)
                 .then(res=>res.json())
-                .then(dishes=>{
-                    setMenus([...menus,dishes[0]])
-                })
-            }
-        })
-
+                .then(menus=> {
+                setMenus(menus);
+            })
+            })
+        
         
 
     },[])
     return (<>
-
-    <h4>{restaurant.name}</h4>
-    <p>{JSON.stringify(menus)}</p>
+    <div className="container">
+    <img className="w-100" height="300px" src={restaurant.image}/>
+    <h4 className="mt-4 display-5 fw-bold">{restaurant.name}</h4>
+    <p className="badge bg-success">{restaurant.ratings}</p>
+    <p>{restaurant.description}</p>
+    <p>Location : {restaurant.address}</p>
+    <hr></hr>
+    <div className="row">
+        <div className="col-2"></div>
+        <div className="col-6">
+            <h4>Menus</h4>
+            <div>
+                {menus.map(m=>(<MenuCard dishes={m.dishes} price={m.price}/>))}
+            </div>
+        </div>
+    </div>
+    </div>
+   
     </>  );
 }
  

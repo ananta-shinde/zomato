@@ -67,19 +67,24 @@
       "image":"https://b.zmtcdn.com/data/pictures/chains/3/20889263/d486d9ab629536dc989cbb192ba7ae9e_featured_v2.jpg?output-format=webp",
       "ratings":4,
       "description":"South Indian, Chinese, Punjabi dishes, Rajashtani thali",
-      "dishes" : [
-           1,2
-      ]
+      "address":"location , city"
     },
     {
       "id":2,
       "cityId":"2652",
       "name" : "Biryani Nation",
       "image":"https://b.zmtcdn.com/data/pictures/chains/3/20889263/d486d9ab629536dc989cbb192ba7ae9e_featured_v2.jpg?output-format=webp"
+       
     },
     {
       "id":3,
       "cityId":"414a",
+      "name" : "Punjabi Rasoi",
+      "image":"https://b.zmtcdn.com/data/pictures/chains/3/20889263/d486d9ab629536dc989cbb192ba7ae9e_featured_v2.jpg?output-format=webp"
+    },
+    {
+      "id":4,
+      "cityId":"d065",
       "name" : "Punjabi Rasoi",
       "image":"https://b.zmtcdn.com/data/pictures/chains/3/20889263/d486d9ab629536dc989cbb192ba7ae9e_featured_v2.jpg?output-format=webp"
     }
@@ -87,13 +92,66 @@
   "dishes":[
     {
       "id":1,
+      "categoriesId":1,
       "name": "Paneer Masala",
-      "decription":"spicy indian dish"
+      "decription":"spicy indian dish",
+      "image":"https://b.zmtcdn.com/data/dish_photos/4ff/9bde45871f341314648c4267d33874ff.jpg?fit=around|130:130&crop=130:130;*,*"
     },
     {
       "id":2,
+      "categoriesId":1,
       "name": "Biryani",
-      "decription":"Mughlai indian dish"
+      "decription":"Mughlai indian dish",
+      "image":"https://b.zmtcdn.com/data/dish_photos/ad6/ff5421a4ad4809bdf1806b6098682ad6.jpg?fit=around|130:130&crop=130:130;*,*"
+    },
+    {
+      "id":3,
+      "categoriesId":2,
+      "name": "Noodles",
+      "decription":"Mughlai indian dish",
+      "image":"https://b.zmtcdn.com/data/dish_photos/909/2aa14c3db154a478f6e26e45bc4dc909.jpg?fit=around|130:130&crop=130:130;*,*"
+    },
+    {
+      "id":4,
+      "categoriesId":3,
+      "name": "Ice-cream",
+      "decription":"Mughlai indian dish",
+      "image":"https://b.zmtcdn.com/data/dish_photos/9ad/f4ac3bc9654460b4bd7c272aa7c7f9ad.jpg?fit=around|130:130&crop=130:130;*,*"
     }
+  ],
+  "menus":[
+       { 
+        "id":1,
+        "restaurantId":1,
+        "dishesId":1,
+        "price":200
+      },
+       { 
+        "id":2,
+        "restaurantId":1,
+        "dishesId":2,
+        "price":350
+      },
+       { 
+        "id":3,
+        "restaurantId":1,
+        "dishesId":4,
+        "price":150
+      }
+  ],
+  "categories":[
+    {
+      "id":1,
+      "name":"Indian"
+    },
+    {
+      "id":2,
+      "name":"Chinese"
+    },
+    {
+      "id":3,
+      "name":"Dessert"
+    }
+
   ]
 }
