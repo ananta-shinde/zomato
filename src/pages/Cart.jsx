@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import { cartContext } from "../contexts";
+
 const Cart = () => {
+    const cartItems = useContext(cartContext);
     return ( <>
-    <h1>Cart page</h1></> );
+    <p>{JSON.stringify(cartItems)}</p>
+    </> );
 }
  
 export default Cart;

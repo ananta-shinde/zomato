@@ -34,9 +34,10 @@ const Restaurant = () => {
         <div className="col-6">
             <h4>Menus</h4>
             <div>
-                {menus.map(m=>(<MenuCard dishes={m.dishes} price={m.price}/>))}
+                {menus.map(m=>(<MenuCard dishes={m.dishes} price={m.price} restaurantId={restaurant.id} menuId={m.id}/>))}
             </div>
         </div>
+        
     </div>
     </div>
    
